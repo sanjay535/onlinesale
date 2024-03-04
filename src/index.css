@@ -1,13 +1,117 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(100vw - 10%);
+}
+.leftRight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.select {
+  width: 400px;
+  padding: 12px;
+  font: 400;
+  font-size: 24px;
+  outline: none;
+  margin: 8px;
+  text-transform: uppercase;
+}
+.addField {
+  padding: 12px;
+  outline: none;
+  font-size: 24px;
+  margin: 8px;
+  text-transform: uppercase;
+}
+.select option {
+  text-transform: uppercase;
+}
+.inputText {
+  display: flex;
+  align-items: center;
+  min-width: 400px;
+  font-size: 24px;
+}
+.inputText input {
+  width: 100%;
+  padding: 12px;
+  font-weight: 400;
+  font-size: 24px;
+  outline: none;
+  margin: 8px;
+}
+.checkbox {
+  display: flex;
+  margin: 8px 0;
+  align-items: center;
+  font-size: 24px;
+}
+.checkbox > input {
+  padding: 12px;
+  height: 40px;
+  width: 40px;
+  margin: 0 12px;
+}
+
+.textArea {
+  display: flex;
+  font-size: 24px;
+  min-width: 400px;
+}
+.textArea label {
+  align-content: flex-end;
+}
+.textArea textarea {
+  width: 100%;
+  min-height: 150px;
+  font-size: 24px;
+}
+.radioBtn {
+  margin: 8px 0;
+  font-size: 24px;
+}
+.radioBtn > div {
+  display: flex;
+  align-items: center;
+}
+.radioBtn input {
+  margin: 0 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.dropdown {
+  font-size: 24px;
+}
+.dropdown select {
+  padding: 12px;
+  min-width: 400px;
+  font-size: 24px;
+  margin: 0 12px;
+}
+.dropdown option {
+  font-size: 24px;
+}
+.label {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.inputField {
+  width: 400px;
+  padding: 12px;
+  font: 400;
+  font-size: 24px;
+  outline: none;
+  margin: 8px;
+  text-transform: uppercase;
 }
